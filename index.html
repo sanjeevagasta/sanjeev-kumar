@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">Sanjeev Kumar</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="section hero">
+        <div class="hero-content">
+            <img src="images/j.png" alt="Profile Image" class="profile-img">
+            <h2>Hello, I'm <span>Sanjeev Kumar</span></h2>
+            <p>Data Analyst | UI Designer | Creative Thinker</p>
+            <button onclick="scrollToSection('projects')">View My Work</button>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2 class="section-title">About Me</h2>
+        <div class="card">
+            <p>
+                I build modern, responsive websites with beautiful UI, smooth shadows,
+                and interactive animations. Passionate about clean design and creative coding.
+            </p>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="images/e.png" alt="Project 1">
+                <h3>sanjeev Kumar</h3>
+                <p>Modern UI website with animation.</p>
+            </div>
+            <div class="project-card">
+                <img src="images/s.png" alt="Project 2">
+                <h3>sanjeev Kumar</h3>
+                <p>Creative dashboard with smooth shadows.</p>
+            </div>
+            <div class="project-card">
+                <img src="images/n.jpg" alt="Project 3">
+                <h3>sanjeev Kumar</h3>
+                <p>Interactive portfolio design.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="card contact-card">
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button onclick="showMessage()">Send Message</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Your Name | All Rights Reserved</p>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
